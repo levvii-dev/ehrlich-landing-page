@@ -138,6 +138,15 @@ li a:hover {
   margin-right: 1em;
 }
 
+.cards {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 4em;
+  margin: 2em 0 2.5em;
+}
+
 .card {
   max-width: 225px;
 }
@@ -222,6 +231,10 @@ section.container {
   gap: 2em;
 }
 
+.bg-gray {
+  background-color: #F2F2F2;
+}
+
 /* Page Specific */
 .benefits ul, .benefits ul li {
   display: flex;
@@ -287,4 +300,10 @@ section.container {
 
 #recently-bought .items {
   margin: 2em 0;
+}
+
+#instagram #view-post {
+  margin: 4em auto;
+  width: -moz-fit-content;
+  width: fit-content;
 }/*# sourceMappingURL=main.css.map */

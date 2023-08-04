@@ -1,5 +1,11 @@
 @use '../abstract' as *;
 
+.cards {
+    @include flex();
+    gap: 4em;
+    margin: 2em 0 2.5em;
+}
+
 .card {
     max-width: 225px;
 

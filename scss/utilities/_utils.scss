@@ -1,4 +1,4 @@
-@use '../abstract/mixins' as *;
+@use '../abstract' as *;
 
 .container {
     max-width: 1440px;
@@ -18,4 +18,8 @@ section.container {
     display: grid;
     grid-template-columns: repeat(4, 25%);
     gap: 2em;
+}
+
+.bg-gray {
+    background-color: $gray;
 }
