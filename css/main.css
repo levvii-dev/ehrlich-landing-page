@@ -38,9 +38,13 @@ li a:hover {
 }
 
 .banner-sm {
+  max-width: 1440px;
+  margin: auto;
   display: flex;
+  flex-direction: row;
+  align-items: center;
   justify-content: space-evenly;
-  padding: 2em;
+  padding: 1.5em;
   text-transform: uppercase;
 }
 .banner-sm h2 {
@@ -66,6 +70,15 @@ li a:hover {
   padding: 0.5em 1.1em;
 }
 
+.btn-sm {
+  font-size: 1.4rem;
+}
+
+.btn-round {
+  border: solid 1px #000000;
+  border-radius: 5em;
+}
+
 .btn-black {
   background-color: #000000;
   color: #FFFFFF;
@@ -73,7 +86,9 @@ li a:hover {
 
 .btn-currency {
   display: flex;
+  flex-direction: row;
   align-items: center;
+  justify-content: center;
   padding: 0.6em;
   border: 1px solid #F2F2F2;
   border-radius: 3.5em;
@@ -84,8 +99,26 @@ li a:hover {
   margin-right: 1em;
 }
 
+.card {
+  max-width: 225px;
+}
+.card img {
+  max-width: 225px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+.card h2 {
+  font-size: 2.4rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin: 0.5em 0;
+}
+
 header {
   display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: space-between;
   width: 100%;
@@ -98,7 +131,9 @@ header {
 
 .left-nav ul, .right-nav ul, .right-nav {
   display: flex;
+  flex-direction: row;
   align-items: center;
+  justify-content: center;
   gap: 1.5em;
 }
 .left-nav ul .active, .right-nav ul .active, .right-nav .active {
@@ -108,6 +143,33 @@ header {
 .container {
   max-width: 1440px;
   margin: auto;
+}
+
+section.container {
+  padding: 4em 6em;
+  text-align: center;
+}
+section.container h1 {
+  font-size: 3.6rem;
+  font-weight: 800;
+}
+section.container p {
+  font-size: 1.4rem;
+  margin: 1.5em 0 2.5em;
+}
+
+.d-flex {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 2em;
+}
+
+.grid-4 {
+  display: grid;
+  grid-template-columns: repeat(4, 25%);
+  gap: 2em;
 }
 
 /* Page Specific */
@@ -131,21 +193,41 @@ header {
 
 #deals {
   display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: space-between;
   text-align: center;
   text-transform: uppercase;
-  padding: 4em 6em;
 }
 #deals h2 {
   font-size: 3.2rem;
   font-weight: 600;
   padding: 0.2em;
   display: flex;
+  flex-direction: row;
   align-items: center;
+  justify-content: center;
 }
 #deals span {
   font-size: 1.8rem;
   font-weight: 800;
   margin-left: 0.5em;
+}
+#deals p {
+  font-size: 1rem;
+  margin: 0;
+}
+
+#trending {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#trending .categories {
+  margin: auto;
+  margin-bottom: 3em;
+}
+#trending .hashtags a {
+  text-transform: none;
 }/*# sourceMappingURL=main.css.map */
