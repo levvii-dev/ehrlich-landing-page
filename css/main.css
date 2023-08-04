@@ -33,8 +33,31 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
+.big-heading {
+  font-size: 8.6rem;
+  font-weight: 800;
+}
+
 li a:hover {
   font-weight: 600;
+}
+
+.banner {
+  max-width: 1440px;
+  margin: auto;
+  position: relative;
+  color: #FFFFFF;
+}
+.banner .right-content {
+  position: absolute;
+  top: 30%;
+  right: 15%;
+  transform: translate(15%, -30%);
+}
+.banner h2 {
+  font-size: 2.8rem;
+  font-weight: 600;
+  margin: 0.5em 0 1.5em;
 }
 
 .banner-sm {
@@ -125,6 +148,7 @@ header {
   padding: 1em 3em;
   text-transform: uppercase;
   font-size: 1.4rem;
+  z-index: 1;
 }
 
 .left-nav ul, .right-nav ul, .right-nav {
