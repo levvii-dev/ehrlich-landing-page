@@ -1,7 +1,6 @@
 @use '../abstract' as *;
 
 header{
-    @include flex(center, space-between);
     width: 100%;
     position: fixed;
     background-color: $white;    
@@ -9,6 +8,12 @@ header{
     text-transform: uppercase;
     font-size: 1.4rem;
     z-index: 1;
+
+    .navigation {
+        max-width: $maxWidth;
+        margin: auto;
+        @include flex(center, space-between);
+    }
 }
 
 .left-nav ul, .right-nav ul, .right-nav {

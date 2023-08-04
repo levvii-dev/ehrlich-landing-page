@@ -108,6 +108,11 @@ li a:hover {
   padding: 0.5em 1.1em;
   cursor: pointer;
 }
+.btn:hover {
+  background-color: #000000;
+  color: #FFFFFF;
+  border: solid 1px #FFFFFF;
+}
 
 .btn-sm {
   font-size: 1.4rem;
@@ -121,6 +126,11 @@ li a:hover {
 .btn-black {
   background-color: #000000;
   color: #FFFFFF;
+}
+.btn-black:hover {
+  background-color: #FFFFFF;
+  color: #000000;
+  border: solid 1px #000000;
 }
 
 .btn-currency {
@@ -183,11 +193,53 @@ li a:hover {
   margin-top: 1em;
 }
 
-header {
+footer {
+  max-width: 1440px;
+  margin: auto;
+  padding: 4em 6em;
+  font-size: 1.2rem;
+}
+footer h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin: 1em 0;
+}
+footer .copyright {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  margin: 2em 0;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  justify-content: start;
+  gap: 4em;
+}
+.footer-links li {
+  padding: 0.5em;
+}
+.footer-links .right-col {
+  margin-left: 5em;
+}
+
+.footer-socials ul, .footer-payment ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: start;
+  gap: 1em;
+}
+
+.footer-payment img {
+  max-height: 25px;
+}
+
+header {
   width: 100%;
   position: fixed;
   background-color: #FFFFFF;
@@ -195,6 +247,14 @@ header {
   text-transform: uppercase;
   font-size: 1.4rem;
   z-index: 1;
+}
+header .navigation {
+  max-width: 1440px;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .left-nav ul, .right-nav ul, .right-nav {
@@ -244,6 +304,8 @@ section.container {
 .benefits {
   background-color: #F2F2F2;
   padding-top: 7em;
+  max-width: 1440px;
+  margin: auto;
 }
 .benefits ul {
   padding: 1em 4em;

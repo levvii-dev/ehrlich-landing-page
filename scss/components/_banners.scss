@@ -1,7 +1,7 @@
 @use '../abstract' as *;
 
 .banner {
-    max-width: 1440px;
+    max-width: $maxWidth;
     margin: auto;
     position: relative;
     color: $white;
@@ -21,7 +21,7 @@
 }
 
 .banner-sm {
-    max-width: 1440px;
+    max-width: $maxWidth;
     margin: auto;
     @include flex(center, space-evenly);
     padding: 1.5em;

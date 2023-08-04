@@ -1,0 +1,45 @@
+@use '../abstract' as *;
+
+footer {
+    max-width: $maxWidth;
+    margin: auto;
+    padding: 4em 6em;
+    font-size: 1.2rem;
+
+    h3 {
+        font-size: 1.2rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        margin: 1em 0;
+    }
+
+    .copyright {
+        @include flex(center,space-between);
+        margin: 2em 0;
+    }
+}
+
+.footer-links {
+    @include flex(start, start);
+    gap: 4em;
+
+    li {
+        padding: 0.5em;
+    }
+
+    .right-col {
+        margin-left: 5em;
+    }
+}
+
+.footer-socials ul, .footer-payment ul{
+    @include flex(center, start);
+    gap: 1em;
+}
+
+.footer-payment {
+    img {
+        max-height: 25px;
+    }
+}
+

@@ -9,6 +9,8 @@
 .benefits {
     background-color: $gray;
     padding-top: 7em;
+    max-width: $maxWidth;
+    margin: auto;
 
     ul{
         padding: 1em 4em;
