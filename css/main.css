@@ -306,4 +306,25 @@ section.container {
   margin: 4em auto;
   width: -moz-fit-content;
   width: fit-content;
+}
+
+#newsletter input[type=email] {
+  font-size: 1.4rem;
+  width: 25em;
+  padding: 0.5em 1em;
+  border-radius: 0;
+  border: 0;
+  background-color: #F2F2F2;
+}
+#newsletter form {
+  position: relative;
+}
+#newsletter button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  padding: 0 0.5em;
+  border: 0;
+  background-color: #FFFFFF;
 }/*# sourceMappingURL=main.css.map */

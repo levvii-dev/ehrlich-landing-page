@@ -7,7 +7,7 @@
 }
 
 .benefits {
-    background-color: #F2F2F2;
+    background-color: $gray;
     padding-top: 7em;
 
     ul{
@@ -71,5 +71,30 @@
     #view-post {
         margin: 4em auto;
         width: fit-content;
+    }
+}
+
+#newsletter {
+    input[type="email"]{
+        font-size: 1.4rem;
+        width: 25em;
+        padding: 0.5em 1em;
+        border-radius: 0;
+        border: 0;
+        background-color: $gray;
+    }
+
+    form {
+        position: relative;
+    }
+
+    button {
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 100%;
+        padding: 0 0.5em;
+        border: 0;
+        background-color: $white;
     }
 }
