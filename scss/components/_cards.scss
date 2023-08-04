@@ -1,3 +1,5 @@
+@use '../abstract' as *;
+
 .card {
     max-width: 225px;
 
@@ -12,5 +14,29 @@
         font-weight: 600;
         text-transform: uppercase;
         margin: 0.5em 0;
+    }
+
+    p {
+        font-size: 1.4rem;
+        padding: 0.5em 0;
+    }
+
+    .item-price {
+        font-weight: 600;
+
+        &.sale {
+            color: $red;
+        }
+
+        span {
+            color: $black;
+            text-decoration: line-through;
+            margin-left: 1.5em;
+        }
+    }
+
+    .btn {
+        width: 100%;
+        margin-top: 1em;
     }
 }

@@ -38,11 +38,6 @@
         font-weight: 800;
         margin-left: 0.5em;
     }
-
-    p {
-        font-size: 1rem;
-        margin: 0;
-    }
 }
 
 
@@ -54,6 +49,7 @@
 
 #trending {
     @include flex(center, center, column);
+    margin-bottom: 4em;
     
     .categories {
         margin: auto;
@@ -62,5 +58,11 @@
 
     .hashtags a {
         text-transform: none;
+    }
+}
+
+#recently-bought {
+    .items {
+        margin: 2em 0;
     }
 }
