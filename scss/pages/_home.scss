@@ -21,7 +21,6 @@
     }
 }
 
-
 #deals {
     @include flex(center, space-between);    
     text-align: center;
@@ -44,6 +43,13 @@
         font-size: 1rem;
         margin: 0;
     }
+}
+
+
+#vip {
+    background: url('../../img/banner-effect.png');
+    background-repeat: no-repeat;
+    background-color: $black;
 }
 
 #trending {

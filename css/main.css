@@ -56,8 +56,6 @@ li a:hover {
 }
 
 .banner-black {
-  background: url("../../img/banner-effect.png");
-  background-repeat: no-repeat;
   background-color: #000000;
   color: #FFFFFF;
 }
@@ -216,6 +214,12 @@ section.container p {
 #deals p {
   font-size: 1rem;
   margin: 0;
+}
+
+#vip {
+  background: url("../../img/banner-effect.png");
+  background-repeat: no-repeat;
+  background-color: #000000;
 }
 
 #trending {
