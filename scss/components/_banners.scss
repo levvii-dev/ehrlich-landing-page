@@ -1,0 +1,25 @@
+
+@use '../abstract/colors' as *;
+
+.banner-sm {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 2em;
+    text-transform: uppercase;
+
+    h2 {
+        font-size: 3.2rem;
+        font-weight: 800;
+    }
+
+    p {
+        font-size: 1.8rem;
+    }
+}
+
+.banner-black {
+    background: url('../../img/banner-effect.png');
+    background-repeat: no-repeat;
+    background-color: $black;
+    color: $white;
+}
