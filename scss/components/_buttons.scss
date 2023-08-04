@@ -1,0 +1,23 @@
+@use '../abstract/colors' as *;
+
+.btn {
+    padding: 1em 2em;
+    background-color: $white;
+    text-transform: uppercase;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.btn-currency {
+    display: flex;
+    align-items: center;
+    padding: 0.6em;
+    border: 1px solid $gray;
+    border-radius: 3.5em;
+    cursor: pointer;
+
+    p{
+        margin-left: 0.3em;
+        margin-right: 1em;
+    }
+}

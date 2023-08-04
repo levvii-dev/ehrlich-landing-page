@@ -1,0 +1,109 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  min-height: 100vh;
+}
+
+img {
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+li a:hover {
+  font-weight: 600;
+}
+
+.btn {
+  padding: 1em 2em;
+  background-color: #FFFFFF;
+  text-transform: uppercase;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.btn-currency {
+  display: flex;
+  align-items: center;
+  padding: 0.6em;
+  border: 1px solid #F2F2F2;
+  border-radius: 3.5em;
+  cursor: pointer;
+}
+.btn-currency p {
+  margin-left: 0.3em;
+  margin-right: 1em;
+}
+
+/* Other Styles */
+.benefits ul, .benefits ul li {
+  display: flex;
+  align-items: center;
+}
+
+.benefits {
+  background-color: #F2F2F2;
+  padding-top: 7em;
+}
+.benefits ul {
+  padding: 1em 4em;
+  justify-content: space-between;
+  font-size: 1.2rem;
+}
+.benefits ul li {
+  gap: 1.5em;
+}
+
+#deals {
+  display: flex;
+  gap: 7.5em;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  position: fixed;
+  background-color: #FFFFFF;
+  padding: 1em 3em;
+  text-transform: uppercase;
+  font-size: 1.4rem;
+}
+
+.left-nav ul, .right-nav ul, .right-nav {
+  display: flex;
+  align-items: center;
+  gap: 1.5em;
+}
+.left-nav ul .active, .right-nav ul .active, .right-nav .active {
+  font-weight: 600;
+}
+
+.container {
+  max-width: 1440px;
+  margin: auto;
+}/*# sourceMappingURL=main.css.map */
