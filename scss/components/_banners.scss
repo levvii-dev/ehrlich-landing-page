@@ -1,10 +1,10 @@
-
-@use '../abstract/colors' as *;
+@use '../abstract' as *;
 
 .banner-sm {
-    display: flex;
-    justify-content: space-evenly;
-    padding: 2em;
+    max-width: 1440px;
+    margin: auto;
+    @include flex(center, space-evenly);
+    padding: 1.5em;
     text-transform: uppercase;
 
     h2 {

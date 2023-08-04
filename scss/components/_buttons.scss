@@ -1,4 +1,4 @@
-@use '../abstract/colors' as *;
+@use '../abstract' as *;
 
 .btn {
     background-color: $white;
@@ -8,14 +8,22 @@
     padding: 0.5em 1.1em;
 }
 
+.btn-sm {
+    font-size: 1.4rem;
+}
+
+.btn-round {
+    border: solid 1px $black;
+    border-radius: 5em;
+}
+
 .btn-black {
     background-color: $black;
     color: $white;
 }
 
 .btn-currency {
-    display: flex;
-    align-items: center;
+    @include flex();
     padding: 0.6em;
     border: 1px solid $gray;
     border-radius: 3.5em;

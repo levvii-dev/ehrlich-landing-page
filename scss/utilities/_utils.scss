@@ -1,0 +1,32 @@
+@use '../abstract/mixins' as *;
+
+.container {
+    max-width: 1440px;
+    margin: auto;
+}
+
+section.container {
+    padding: 4em 6em;
+    text-align: center;
+
+    h1 {
+        font-size: 3.6rem;
+        font-weight: 800;
+    }
+
+    p {
+        font-size: 1.4rem;
+        margin: 1.5em 0 2.5em;
+    }
+}
+
+.d-flex {
+    @include flex ();
+    gap: 2em;
+}
+
+.grid-4 {
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    gap: 2em;
+}

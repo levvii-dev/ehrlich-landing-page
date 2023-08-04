@@ -1,3 +1,5 @@
+@use '../abstract' as *;
+
 /* Page Specific */
 .benefits ul, .benefits ul li {
     display: flex;
@@ -21,24 +23,38 @@
 
 
 #deals {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    @include flex(center, space-between);    
     text-align: center;
     text-transform: uppercase;
-    padding: 4em 6em;
 
     h2 {
         font-size: 3.2rem;
         font-weight: 600;
         padding: 0.2em;
-        display: flex;
-        align-items: center;
+        @include flex();
     }
 
     span {
         font-size: 1.8rem;
         font-weight: 800;
         margin-left: 0.5em;
+    }
+
+    p {
+        font-size: 1rem;
+        margin: 0;
+    }
+}
+
+#trending {
+    @include flex(center, center, column);
+    
+    .categories {
+        margin: auto;
+        margin-bottom: 3em;
+    }
+
+    .hashtags a {
+        text-transform: none;
     }
 }

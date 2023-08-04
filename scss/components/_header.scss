@@ -1,20 +1,17 @@
-@use '../abstract/colors';
+@use '../abstract' as *;
 
 header{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    @include flex(center, space-between);
     width: 100%;
     position: fixed;
-    background-color: colors.$white;    
+    background-color: $white;    
     padding: 1em 3em;
     text-transform: uppercase;
     font-size: 1.4rem;
 }
 
 .left-nav ul, .right-nav ul, .right-nav {
-    display: flex;
-    align-items: center;
+    @include flex();
     gap: 1.5em;
 
     .active {
