@@ -38,11 +38,16 @@ li a:hover {
 }
 
 .btn {
-  padding: 1em 2em;
   background-color: #FFFFFF;
   text-transform: uppercase;
   font-size: 1.8rem;
   font-weight: 600;
+  padding: 0.5em 1.1em;
+}
+
+.btn-black {
+  background-color: #000000;
+  color: #FFFFFF;
 }
 
 .btn-currency {
@@ -56,30 +61,6 @@ li a:hover {
 .btn-currency p {
   margin-left: 0.3em;
   margin-right: 1em;
-}
-
-/* Other Styles */
-.benefits ul, .benefits ul li {
-  display: flex;
-  align-items: center;
-}
-
-.benefits {
-  background-color: #F2F2F2;
-  padding-top: 7em;
-}
-.benefits ul {
-  padding: 1em 4em;
-  justify-content: space-between;
-  font-size: 1.2rem;
-}
-.benefits ul li {
-  gap: 1.5em;
-}
-
-#deals {
-  display: flex;
-  gap: 7.5em;
 }
 
 header {
@@ -106,4 +87,44 @@ header {
 .container {
   max-width: 1440px;
   margin: auto;
+}
+
+/* Page Specific */
+.benefits ul, .benefits ul li {
+  display: flex;
+  align-items: center;
+}
+
+.benefits {
+  background-color: #F2F2F2;
+  padding-top: 7em;
+}
+.benefits ul {
+  padding: 1em 4em;
+  justify-content: space-between;
+  font-size: 1.2rem;
+}
+.benefits ul li {
+  gap: 1.5em;
+}
+
+#deals {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 4em 6em;
+}
+#deals h2 {
+  font-size: 3.2rem;
+  font-weight: 600;
+  padding: 0.2em;
+  display: flex;
+  align-items: center;
+}
+#deals span {
+  font-size: 1.8rem;
+  font-weight: 800;
+  margin-left: 0.5em;
 }/*# sourceMappingURL=main.css.map */

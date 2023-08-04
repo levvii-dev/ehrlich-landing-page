@@ -1,0 +1,44 @@
+/* Page Specific */
+.benefits ul, .benefits ul li {
+    display: flex;
+    align-items: center;
+}
+
+.benefits {
+    background-color: #F2F2F2;
+    padding-top: 7em;
+
+    ul{
+        padding: 1em 4em;
+        justify-content: space-between;
+        font-size: 1.2rem;
+
+        li {
+            gap: 1.5em;
+        }
+    }
+}
+
+
+#deals {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 4em 6em;
+
+    h2 {
+        font-size: 3.2rem;
+        font-weight: 600;
+        padding: 0.2em;
+        display: flex;
+        align-items: center;
+    }
+
+    span {
+        font-size: 1.8rem;
+        font-weight: 800;
+        margin-left: 0.5em;
+    }
+}

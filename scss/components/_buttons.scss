@@ -1,11 +1,16 @@
 @use '../abstract/colors' as *;
 
 .btn {
-    padding: 1em 2em;
     background-color: $white;
     text-transform: uppercase;
     font-size: 1.8rem;
     font-weight: 600;
+    padding: 0.5em 1.1em;
+}
+
+.btn-black {
+    background-color: $black;
+    color: $white;
 }
 
 .btn-currency {
