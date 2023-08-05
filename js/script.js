@@ -5,8 +5,6 @@ function addToCart (elem) {
     const itemName = elem.children[1].innerText; 
     const itemPrice = elem.children[2].innerText.split(" ")[0]; 
     
-    console.log(itemImg, itemName, itemPrice);
-
     const item = {
         itemName,
         itemPrice,
@@ -24,7 +22,6 @@ function addToCart (elem) {
     {
         cartItems = [item]
     }
-    console.log(cartItems);
     
     localStorage.setItem("cartItems", JSON.stringify(cartItems));
     populateUI();
@@ -37,8 +34,6 @@ function removeItem(itemIndex){
     {
         cartItems = JSON.parse(cartItems);
         cartItems = cartItems.filter( (element, index) => index != itemIndex)
-
-        console.log(cartItems)
 
         localStorage.setItem("cartItems", JSON.stringify(cartItems));
         populateUI();
