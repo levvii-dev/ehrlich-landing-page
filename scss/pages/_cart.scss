@@ -1,0 +1,90 @@
+@use '../abstract' as *;
+
+#cart {
+    a {
+        text-decoration: underline;
+    }
+
+    .btn {
+        font-size: 1.4rem;
+        font-weight: 400;
+        text-align: center;
+        border-radius: 5px;
+        border: solid 1px $black;
+
+        img {
+            margin: auto;
+        }
+    }
+
+    &.container {
+        font-size: 1.4rem;
+    }
+}
+
+.row {
+    @include flex(center, space-between);
+
+    &.item {
+        border-top: solid 2px $gray;
+        padding: 2em 0;
+    }
+}
+
+.cart-heading {
+    margin: 2em 0;
+    h2 {
+        font-size: 1.8rem;
+        font-weight: 600;
+    }
+}
+
+.orders {
+    @include flex(start, space-between);
+    gap: 2em;
+
+    .cart-items {
+        width: 80%;
+    }
+
+    .cart-label {
+        font-weight: 600;
+    }
+
+    .order-summary * {
+        margin-bottom: 1em;
+    }
+}
+
+.item-detail {
+    @include flex (start,start);
+
+    .item-name, .item-price { 
+        font-weight: 600;
+    }
+
+    img {
+        max-width: 150px;
+        margin-right: 1em;
+    }
+
+    .btn-remove-item {
+        border: 0;
+        background-color: $white;
+        text-decoration: underline;
+        cursor: pointer;
+        margin-top: 1em;
+    }
+}
+
+
+.payment-methods {
+    @include flex (center, start);
+    gap: 1em;
+    margin-top: 1em;
+
+    img {
+        max-width: 25px;
+    }
+}
+

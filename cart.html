@@ -10,25 +10,26 @@
     <link rel="stylesheet" href="./css/main.css">
 
     <script src="./js/script.js" defer></script>
-
-    <title>Threaded</title>
+    <title>Threaded - Cart</title>
 </head>
 <body>
     <header>
         <div class="navigation">
             <nav class="left-nav">
                 <ul>
-                    <li><a href="#" class="active">Women</a></li>
+                    <li><a href="#" >Women</a></li>
                     <li><a href="#">Plus</a></li>
                     <li><a href="#">Men</a></li>
                     <li><a href="#">Accessories</a></li>
                 </ul>
             </nav>
-            <img src="./img/Logo.svg" alt="Threaded Logo">
+            <a href="index.html">
+                <img src="./img/Logo.svg" alt="Threaded Logo">
+            </a>
             <nav class="right-nav">
                 <ul>
                     <li><a href="#"><img src="./img/icons/bx_bx-user.svg" alt="User"></a></li>
-                    <li><a href="cart.html"><img src="./img/icons/bx_bx-shopping-bag.svg" alt="Shopping Bag"></a></li>
+                    <li><a href="#"><img src="./img/icons/bx_bx-shopping-bag.svg" alt="Shopping Bag"></a></li>
                     <li><a href="#"><img src="./img/icons/bx_bx-heart.svg" alt="Heart"></a></li>
                     <li><a href="#"><img src="./img/icons/bx_bx-support.svg" alt="Support"></a></li>                    
                 </ul>
@@ -43,215 +44,57 @@
         </div>        
     </header>
 
-    <section class="benefits">
-        <ul>
-            <li>
-                <img src="./img/icons/bx_bx-crown.svg" alt="Crown">
-                <span>Exclusive Deals for VIP 2 and up!</span>
-            </li>
-            <li>
-                <img src="./img/icons/bx_bx-star.svg" alt="Crown">
-                <span>Weekly New Arrivals</span>
-            </li>
-            <li>
-                <img src="./img/icons/bx_bx-truck.svg" alt="Crown">
-                <span>Free Shipping On Orders Over $100</span>
-            </li>
-            <li>
-                <img src="./img/icons/bx_bx-map-pin.svg" alt="Crown">
-                <span>Track Your Order</span>
-            </li>
-            <li>
-                <img src="./img/icons/bx_bx-purchase-tag.svg" alt="Crown">
-                <span>10% Off On Your First Order!</span>
-            </li>
-        </ul>
-    </section>
-
-    <main class="container">
-        <a href="#">
-            <img src="./img/hero1.png" alt="black friday banner">    
-        </a>
-    </main>
-
-    <section class="container" id="deals">
-        <div>
-            <h2>$5 <span>off</span></h2>
-            <p>on orders above $50</p>
-        </div>
-        <div>
-            <h2>$15 <span>off</span></h2>
-            <p>on orders above $75</p>
-        </div>
-        <div>
-            <h2>$20 <span>off</span></h2>
-            <p>on orders above $150</p>
-        </div>
-        <div>
-            <h2>$30 <span>off</span></h2>
-            <p>on orders above $200</p>
-        </div>
-        <a href="#" class="btn btn-black">Check out all site-wide deals</a>
-    </section>
-
-    <section class="banner-sm banner-black" id="vip">
-        <h2>Black Friday Exclusive</h2>
-        <p>Free Shipping On All Orders For <br/> VIP 2 and Up</p>
-        <a href="#" class="btn">Shop Now</a>
-    </section>
-
-    <section class="container" id="trending">
-        <h1 class="section-heading">Now Trending</h1>
-        <p class="section-description">See what everyone's wearing right now</p>
-
-        <div class="grid-4 categories text-center">
-            <div class="card">
-                <a href="#">
-                    <img src="./img/trending-winter.png" alt="Winter">
-                    <h2>Winter Fashion</h2>
-                </a>
+    <main class="container" id="cart">
+        <div class="cart-heading">
+            <div class="row">
+                <h2>Shopping Bag <span class="item-count"></span></h2>
+                <p>Need help? +1-562-926-5672</span></p>
             </div>
-            <div class="card">
-                <a href="#">
-                    <img src="./img/trending-boots.png" alt="Boots">
-                    <h2>Boots</h2>
-                </a>
-            </div>
-            <div class="card">
-                <a href="#">
-                    <img src="./img/trending-night.png" alt="Night Dress">
-                    <h2>Night Out</h2>
-                </a>
-            </div>
-            <div class="card">
-                <a href="#">
-                    <img src="./img/trending-holidays.png" alt="Holiday">
-                    <h2>Holidays</h2>
-                </a>
-            </div>
-            <div class="card">
-                <a href="#">
-                    <img src="./img/trending-outwear.png" alt="Outerwear">
-                    <h2>Outerwear</h2>
-                </a>
-            </div>
-            <div class="card">
-                <a href="#">
-                    <img src="./img/trending-dress.png" alt="White Dress">
-                    <h2>White Dresses</h2>
-                </a>
-            </div>
-            <div class="card">
-                <a href="#">
-                    <img src="./img/trending-sweaters.png" alt="Sweaters">
-                    <h2>Sweaters</h2>
-                </a>
-            </div>
-            <div class="card">
-                <a href="#">
-                    <img src="./img/trending-party.png" alt="Party">
-                    <h2>Party</h2>
-                </a>
+            <div class="row">
+                <p><a href="#">Sign in</a> to sync your bag accross devices.</p>
+                <p><a href="#">Let's Chat</a></p>
             </div>
         </div>
-
-        <div class="hashtags">
-            <ul class="d-flex">
-                <li><a href="#" class="btn btn-round btn-sm">#Thanksgiving</a></li>
-                <li><a href="#" class="btn btn-round btn-sm">#NewYears</a></li>
-                <li><a href="#" class="btn btn-round btn-sm">#Knitted</a></li>
-                <li><a href="#" class="btn btn-round btn-sm">#Pajamas</a></li>
-                <li><a href="#" class="btn btn-round btn-sm">#WFH</a></li>
-                <li><a href="#" class="btn btn-round btn-sm">#FallFashion</a></li>
-            </ul>
-        </div>
-    </section>
-
-    <section class="banner" id="new-arrivals">
-        <img src="./img/banner1.PNG" alt="">
-        <div class="right-content">
-            <h1 class="big-heading">NEW <br/> ARRIVALS</h1>
-            <h2>Get ready for the holidays with us!</h2>
-            <a href="#" class="btn">Shop Now</a>
-        </div>
-    </section>
-
-    <section class="container" id="recently-bought">
-        <h1 class="section-heading">Recently Bought</h1>
-
-        <div class="cards">
-            <div class="card">
-                <img src="./img/recent1.png" alt="" class="item-image">
-                <p class="item-name">Festive Looks Rust Red Ribbed Velvet Long Sleeve Bodysuit</p>
-                <p class="item-price">$38</p>
-                <button class="btn btn-black" onclick="addToCart(this.parentElement)">Buy</button>
+        <div class="orders">
+            <div class="cart-items">
+                <div class="row cart-label">
+                    <p>ITEM</p>
+                    <p>PRICE</p>
+                </div>
             </div>
-            <div class="card">
-                <img src="./img/recent2.png" alt="">
-                <p class="item-name">Chevron Flap Crossbody Bag</p>
-                <p class="item-price sale">$38 <span>$7.34</span></p>
-                <button class="btn btn-black" onclick="addToCart(this.parentElement)">Buy</button>
-            </div>
-            <div class="card">
-                <img src="./img/recent3.png" alt="">
-                <p class="item-name">Manilla Tan Multi Plaid Oversized Fringe Scarf</p>
-                <p class="item-price sale">$29 <span>$39</span></p>
-                <button class="btn btn-black" onclick="addToCart(this.parentElement)">Buy</button>
-            </div>
-            <div class="card">
-                <img src="./img/recent4.png" alt="">
-                <p class="item-name">Diamante Puff Sleeve Dress - Black</p>
-                <p class="item-price">$45.99</p>
-                <button class="btn btn-black" onclick="addToCart(this.parentElement)">Buy</button>
-            </div>
-            <div class="card">
-                <img src="./img/recent5.png" alt="">
-                <p class="item-name">Banneth Open Front Formal Dress in Black</p>
-                <p class="item-price sale">$69 <span>$99.95</span></p>
-                <button class="btn btn-black" onclick="addToCart(this.parentElement)">Buy</button>
+            <div class="order-summary">
+                <h2><strong>Order Summary</strong></h2>
+                <div class="order-total">
+                    <div class="row">
+                        <p>Subtotal <span class="item-count"></span></p>
+                        <p>$ <span id="subtotal">0</span></p>
+                    </div>
+                    <div class="row">
+                        <p>Free shipping! <a href="#">details</a></p>
+                        <p>$0</p>
+                    </div>
+                    <div class="row est-total">
+                        <p><strong>Estimated Total</strong></p>
+                        <p><strong>$<span id="est-total">0</span></strong></p>
+                    </div>
+                </div>
+                <div class="btn btn-black">Checkout as guest</div>
+                <div class="btn btn-black">Sign in for faster checkout</div>
+                <div class="btn"><img src="./img/icons/payment-paypal.png" alt=""></div>
             </div>
         </div>
         
-    </section>
+        <p>Free Shipping on orders of US$ 100 or more</p>
+        <p>30 day price match guarantee</p>
+        <ul class="payment-methods">
+            <li><img src="./img/icons/payment-visa.png" alt=""></li>
+            <li><img src="./img/icons/payment-master-card.png" alt=""></li>
+            <li><img src="./img/icons/payment-maestro.png" alt=""></li>
+            <li><img src="./img/icons/payment-amex.png" alt=""></li>
+            <li><img src="./img/icons/payment-paypal.png" alt=""></li>
+        </ul>
+    </main>
 
-    <section class="container bg-gray" id="instagram">
-        <h1 class="section-heading">Your Next Inspo</h1>
-        <p class="section-description">Checkout who's wearing what by using #THREADEDInspo on Instagram</p>
-
-        <div class="cards">
-            <div class="card">
-                <img src="./img/insta1.png" alt="">
-            </div>
-            <div class="card">
-                <img src="./img/insta2.png" alt="">
-            </div>
-            <div class="card">
-                <img src="./img/insta3.png" alt="">
-            </div>
-            <div class="card">
-                <img src="./img/insta4.png" alt="">
-            </div>
-            <div class="card">
-                <img src="./img/insta5.png" alt="">
-            </div>
-        </div>
-
-        <div id="view-post">
-            <a href="#" class="btn btn-black">View All Posts</a>
-        </div>
-    </section>
-
-    <section class="banner-sm banner-black" id="newsletter">
-        <h2>Sign up for exclusive deals and updates</h2>
-        <form action="">
-            <input type="email" name="newsletter" id="newsletter-email" placeholder="Your Email Address">
-            <button>
-                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M14.9551 9.50772L6.15039 2.63077C6.12739 2.61265 6.09974 2.6014 6.07062 2.59829C6.0415 2.59518 6.0121 2.60035 5.98579 2.6132C5.95948 2.62605 5.93733 2.64606 5.92187 2.67093C5.90642 2.69581 5.8983 2.72453 5.89844 2.75381V4.26358C5.89844 4.35928 5.94336 4.45108 6.01758 4.50967L13.0488 9.99991L6.01758 15.4901C5.94141 15.5487 5.89844 15.6405 5.89844 15.7362V17.246C5.89844 17.3769 6.04883 17.4491 6.15039 17.3691L14.9551 10.4921C15.0299 10.4337 15.0905 10.3591 15.1321 10.2738C15.1737 10.1885 15.1954 10.0948 15.1954 9.99991C15.1954 9.905 15.1737 9.81134 15.1321 9.72605C15.0905 9.64077 15.0299 9.5661 14.9551 9.50772Z" fill="black"/>
-                </svg>
-            </button>
-        </form>
-    </section>
 
     <footer>
         <div class="footer-links">

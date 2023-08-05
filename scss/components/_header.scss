@@ -16,6 +16,11 @@ header{
     }
 }
 
+// Adds padding for visibility of header sibling
+header + main, header + section {
+    padding-top: 7em;
+}
+
 .left-nav ul, .right-nav ul, .right-nav {
     @include flex();
     gap: 1.5em;
